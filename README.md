@@ -215,14 +215,14 @@ Após rodar `eval.py` e `eval_tl.py`, preencha a tabela com **acurácia** e **Ma
 
 | Modelo                          | Input       | Acurácia (teste) |    Macro-F1 | Observações                       |
 | ------------------------------- | ----------- | ---------------: | ----------: | --------------------------------- |
-| Baseline (CNN)                  | 48×48, gray |      *preencher* | *preencher* | leve; confunde “happy × surprise” |
-| Transfer Learning (MobileNetV2) | 96×96, RGB  |      *preencher* | *preencher* | melhor robustez em fotos reais    |
+| Baseline (CNN)                  | 48×48, gray |      0.5680 | 0.5474 | leve; confunde “happy × surprise” |
+| Transfer Learning (MobileNetV2) | 96×96, RGB  |      0.5542 | 0.5446 | melhor robustez em fotos reais    |
 
 Inclua as figuras (se existirem):
 
 ```md
 **Curvas (baseline)**  
-![acc](models/curve_acc.png) ![loss](models/curve_loss.png)
+![acc]( models/curve_acc.png) ![loss](models/curve_loss.png)
 
 **Curvas (TL)**  
 ![acc](models/tl_curve_acc.png) ![loss](models/tl_curve_loss.png)
@@ -287,24 +287,3 @@ python src/app_tl.py
 ```
 
 ---
-
-## Licença
-
-Defina a licença do projeto (ex.: MIT).
-Crie um arquivo `LICENSE` na raiz se desejar.
-
----
-
-## Agradecimentos
-
-* Arquiteturas Keras/TF e MobileNetV2 (ImageNet).
-* Comunidade FER/emoções por datasets amplamente utilizados.
-* Colegas e professora da disciplina pela orientação.
-
----
-
-<!--
-Opcional: badge "Open in Colab" (troque SEU_USUARIO/SEU_REPO)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/SEU_USUARIO/SEU_REPO/blob/main/notebooks/02_treino_colab.ipynb)
--->
