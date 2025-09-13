@@ -218,21 +218,18 @@ Após rodar `eval.py` e `eval_tl.py`, preencha a tabela com **acurácia** e **Ma
 | Baseline (CNN)                  | 48×48, gray |      *0.5628* | *0.4642* | leve; confunde “happy × surprise” |
 | Transfer Learning (MobileNetV2) | 96×96, RGB  |      *0.5514* | *0.4883* | melhor robustez em fotos reais    |
 
-```md
-**Curvas (baseline)**
-<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/c17b63cc-89de-4830-9c7a-46e9b0ba3b02" />
-<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/8cd8004d-ae99-418d-9d4d-47de3c31001d" />
 
+**Curvas (baseline)**  
+<img width="630" height="470" alt="image" src="models/curve_acc.png" /> 
+<img width="630" height="470" alt="image" src="models/curve_loss.png" /> 
 
 **Curvas (TL)**  
-<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/1de94e5e-e7a2-4597-bd94-59064f134d56" />
-<img width="630" height="470" alt="image" src="https://github.com/user-attachments/assets/353b7081-0642-467b-9c09-9090efada37a" />
-
+<img width="630" height="470" alt="image" src="models/tl_curve_acc.png" /> 
+<img width="630" height="470" alt="image" src="models/tl_curve_loss.png" /> 
 
 **Matrizes de confusão**  
-Baseline: ![cm](models/confusion_matrix.png)  
-TL: ![cm](models/confusion_matrix_tl.png)
-```
+<img width="630" height="470" alt="image" src="models/confusion_matrix.png" /> 
+<img width="630" height="470" alt="image" src="models/confusion_matrix_tl.png" /> 
 
 ---
 
